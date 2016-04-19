@@ -1,49 +1,226 @@
 /* General */
+html,
 body {
-	font-family: "Open Sans", sans-serif;
-  padding-top: 50px;
+  width: 100%;
+  height: 100%;
 }
 
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.img-responsive {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-inline li {
+  padding-left: 10px;
+}
+.list-inline li a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #FFF;
+}
+
+.topmargin {
+  margin-top: 50px;
+}
+
+.botmargin {
+  margin-bottom: 50px;
+}
+
+/* Buttons */
+.btn:hover {
+  background-color: #FFF;
+  color: #000;
+}
+
+.btn-ghost-light {
+  z-index: 10;
+  color: #FFF;
+  border: 1px solid #FFF;
+  padding: 10px 30px;
+}
+.drop-shadow {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
 /* Navbar */
+.navbar-inverse {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  background-image: none;
+  background-color: transparent;
+  border-color: transparent;
+  -ms-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.navbar-inverse a.navbar-brand,
+.navbar-inverse .navbar-nav>li>a{
+  color: #FFF;
+}
+
+.navbar-inverse span.tagline {
+  color: #009ccf;
+  font-weight: 600;
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  text-decoration: underline;
+}
+
+.navbar-inverse.scrolled {
+  background-color: #000;
+}
+
+
+/* Footer */
 
 
 /* Homepage */
-.banner {
+.header {
   display: flex;
-  align-items: center;
-  overflow: hidden;
   position: relative;
-  background: #333;
-  height: 700px;
-  h1 {
-    font-size: 50px;
-    color: #FFF;
-  }
-  h3, i {
-    color: #FFF;
-  }
-  i {
-    position: absolute;
-    bottom: -300px;
-    z-index: 5;
-  }
-}
-.banner:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
+  align-items: center;
   width: 100%;
   height: 100%;
-  z-index: 1;
-  opacity: .3;
-  background-image: url('http://placehold.it/1280x800');
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
+  background-color: #292929;
   background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  .header-text {
+    text-align: center;
+    width: 100%;
+    h1 {
+      color: transparent;
+      font-weight: 700;
+      font-size: 150px;
+      -webkit-text-stroke: 3px white;
+    }
+    h1:before,
+    h1:after {
+      content: '|';
+      margin: 0 80px;
+      color: #FFF;
+    }
+  }
+  .header-footer {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    ul li a {
+      color: #009cff;
+    }
+  }
 }
+
+.work-header {
+  display: flex;
+  align-items: center;
+  background-color: #666666;
+  height: 100%;
+  h1 {
+    width: 100%;
+    text-align: center;
+    color: transparent;
+    font-weight: 700;
+    font-size: 100px;
+    -webkit-text-stroke: 3px white;
+  }
+  .work-footer {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    ul li a {
+      color: #fff;
+    }
+  }
+}
+.work-body {
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 50px 150px;
+  .body-text {
+    text-align: center;
+  }
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  background-color: #009ccf;
+  height: 100%;
+  h1 {
+    width: 100%;
+    text-align: center;
+    color: transparent;
+    font-weight: 700;
+    font-size: 100px;
+    -webkit-text-stroke: 3px white;
+  }
+  .about-footer {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    ul li a {
+      color: #000;
+    }
+  }
+}
+.about-body {
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 50px 150px;
+  .body-text {
+    text-align: center;
+  }
+  .social-bar li a {
+  color: #009ccf;
+  padding: 10px 10px;
+    &:hover {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 2px solid #000;  
+    }
+  }
+}
+
+
