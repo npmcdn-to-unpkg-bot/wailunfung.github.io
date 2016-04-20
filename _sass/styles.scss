@@ -7,11 +7,16 @@ body {
 
 body {
 	font-family: "Open Sans", sans-serif;
+  line-height: 1.8;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
-  margin-bottom: 20px;
+}
+
+hr {
+  margin-top: 10px;
+  border-top: 1px solid #666;
 }
 
 section {
@@ -20,10 +25,18 @@ section {
   height: 100%;
 }
 
+.nomargin {
+  margin: 0;
+}
+
 .img-responsive {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.list-inline {
+  margin-left: 0;
 }
 
 .list-inline li {
@@ -61,7 +74,8 @@ section {
 }
 /* Navbar */
 .navbar-inverse {
-  display: flex;
+  padding-top: 10px;
+  display: block;
   align-items: center;
   font-family: "Roboto", sans-serif;
   background-image: none;
@@ -73,30 +87,37 @@ section {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
+a:focus,
+a:hover {
+  text-decoration: none;
+}
 
-.navbar-inverse a.navbar-brand,
-.navbar-inverse .navbar-nav>li>a{
+.navbar-inverse a > span:hover {
+  text-decoration: none;
   color: #FFF;
 }
 
-.navbar-inverse span.tagline {
+.left {
+  position: absolute;
+  left: 0;
+  margin-left: 10px;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+}
+
+.navbar-inverse .tagline {
   color: #009ccf;
   font-weight: 600;
   font-size: 16px;
-  padding-top: 10px;
-}
-
-.navbar-inverse .navbar-nav>li>a:hover {
-  text-decoration: underline;
 }
 
 .navbar-inverse.scrolled {
   background-color: #000;
 }
-
-
-/* Footer */
-
 
 /* Homepage */
 .header {
@@ -174,7 +195,7 @@ section {
     }
     .showcase-title {
       position: absolute;
-      bottom: 0;
+      bottom: 0px;
       background-color: rgba(0,0,0,0.7);
       padding: 0 20px;
       text-align: center;
@@ -346,15 +367,70 @@ section {
     text-align: center;
   }
   .social-bar li a {
-  color: #009ccf;
-  padding: 10px 10px;
+    color: #009ccf;
+    padding: 10px 10px;
     &:hover {
-    color: #000;
-    text-decoration: none;
-    border-bottom: 2px solid #000; 
+      color: #000;
+      text-decoration: none;
+      border-bottom: 2px solid #000; 
     }
     @media (max-width: 480px) {padding: 0;}
   }
 }
 
+/* Work General */
 
+.port-banner {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  background-color: #666;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  border-bottom: 1px solid #CCC;
+  .port-header {
+    text-align: center;
+    width: 100%;
+    h1 {
+      color: transparent;
+      font-weight: 700;
+      font-size: 150px;
+      -webkit-text-stroke: 3px black;
+      @media (max-width: 480px) {font-size: 100px;}
+    }
+    h4 {
+      color: #000;
+    }
+  }
+}
+
+.port-page {
+  position: absolute;
+  width: 100%;
+  background-color: #e3e6ea;
+}
+
+.image-block {
+  display: block;
+  padding: 25px 25px 50px 25px;
+  background-color: #666;
+  color: #FFF;
+}
+
+.page-menu {
+  width: 200px;
+  a {
+    color: #000;
+  }
+  .list-group-item {
+    background-color: #CCC;
+    &:hover {
+      background-color: #666;
+      color: #FFF;
+    }
+  }
+}

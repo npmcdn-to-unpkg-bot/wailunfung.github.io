@@ -21,8 +21,8 @@ $(function(){
 	});
 });
 
-/**
- * Listen to scroll to change header opacity class
+/*
+ * Header Opacity Change
  */
 function checkScroll(){
   var startY = $('.navbar-inverse').height() * 2; //The point where the navbar changes in px
@@ -38,3 +38,15 @@ if($('.navbar').length > 0){
     checkScroll();
   });
 }
+
+/*
+ * Page Menu Affix
+ */
+$('#pagemenu').affix({
+  offset: {
+    top: 0,
+    bottom: function () {
+      return (this.bottom = $('.footer').outerHeight(true))
+    }
+  }
+})
