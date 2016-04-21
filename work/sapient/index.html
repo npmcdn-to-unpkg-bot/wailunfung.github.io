@@ -5,18 +5,18 @@ layout: page
   <div class="container text-center">
     <div class="row">
       <div class="col-md-12">
-        <a href="{{ root_url }}/work/sony" class="left"><span class="tagline">sony</span></a>
+        <a href="{{ root_url }}/work/sony" class="left"><span class="tagline"><i class="fa fa-arrow-left"></i> sony</span></a>
         <a href="{{ root_url }}/index.html"><span class="tagline">home</span></a>
-        <a href="{{ root_url }}/work/stormpath" class="right"><span class="tagline">stormpath</span></a>
+        <a href="{{ root_url }}/work/stormpath" class="right"><span class="tagline">stormpath <i class="fa fa-arrow-right"></i></span></a>
       </div>
     </div>
   </div>
 </nav>
 
-<div class="port-banner" id="#sapientnitro">
+<div class="port-banner sapientnitro" id="top">
   <div class="port-header">
-      <h1>Sapient Nitro</h1>
-      <h4>Production Artist, Front End Development, QA Testing</h4>
+      <h1>SapientNitro</h1>
+      <h4>Production Artist, Front End Developer, QA Tester</h4>
     </div>
 </div>
 
@@ -24,10 +24,37 @@ layout: page
 
     <div class="container">
       <div class="row">
-        <div class="col-md-8 col-md-offset-2 topmargin botmargin">
-          <h3 class="nomargin">Project Info</h3>
+
+        <div class="col-md-8 col-md-offset-2 topmargin botmargin" id="intro">
+          <h3 class="nomargin">Project Intro</h3>
           <hr>
+          <p>SapientNitro is a marketing and consulting company that provides business, marketing, and technology services to clients.</p>
+          <p>As a production artist for Sapient, I was able to build upon my training and experience by producing thousands of images and solving many issues while working along side front end development and QA teams.</p>
+          <img src="/images/work/sapient/sapient-intro.jpg" class="img-responsive botmargin">
+          <div class="image-block text-center drop-shadow">
+            <h3 class="nomargin">Production Workflow</h3>
+            <p>Sony FIFA 2014</p>
+            <img src="/images/work/sapient/sapient-workflow-1.jpg" class="img-responsive botmargin">
+            <img src="/images/work/sapient/sapient-workflow-2.jpg" class="img-responsive">
+          </div>
+          <div id="strat"></div>
+          <h3 class="topmargin">Strategy &amp; Concept</h3>
+          <hr>
+          <p>During the fall launch of the Sony global web marketing launch, the team and I ran across many issues regarding image resolution quality. We quickly discovered that the image delivery guides and dimensions were wrong and had to reassess many different image modules that we initially thought were universal sizes.</p>
+          <p>We split our core dev and design teams into a three person team, tackling every image dimension that was on the site. Upon completion, we created and delivered new documentation on all image sizes.</p>
+          <div class="image-block text-center drop-shadow">
+            <h3 class="nomargin">Delivery Guides</h3>
+            <p>Sony Global Marketing Campaign</p>
+            <img src="/images/work/sapient/sapient-deliverydocs.jpg" class="img-responsive">
+          </div>
+          <div id="key"></div>
+          <h3 class="topmargin">Key Challenges</h3>
+          <hr>
+          <p>One of the most challenging tasks I've ever had the pleasure of working on was during the Fifa 2014 World Cup campaign. I was given assets that were not made for high resolution deliveries and was tasked to create the correct images. I carefully manipulated the photos until I had a image that was approved for delivery.</p>
         </div>
+
+        {% include pagenav.html %}
+
       </div>
     </div>
 
