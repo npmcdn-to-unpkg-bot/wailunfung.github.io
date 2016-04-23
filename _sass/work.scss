@@ -14,7 +14,32 @@
   .port-header h1 {
     -webkit-text-stroke: 3px #FFF;
     @media (max-width: 991px) {font-size: 100px;}
-    @media (max-width: 600px) {font-size: 65px; color: #FFF;}
+    @media (max-width: 600px) {font-size: 65px; color: #FFF; -webkit-text-stroke: transparent;}
+  }
+  .port-header h4 {
+    color: #FFF;
+  }
+}
+
+.amberallen {
+  background-image: url("/images/work/amberallen/amber-banner.jpg");
+  background-position: 50%  50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .port-header h1 {
+    @media (max-width: 991px) {font-size: 100px;}
+  }
+}
+
+.iphotographer {
+  background-image: url("/images/work/iphoto/iphoto-banner.jpg");
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .port-header h1 {
+    -webkit-text-stroke: 3px #FFF;
+    @media (max-width: 991px) {font-size: 100px;}
+    @media (max-width: 676px) {font-size: 58px; color: #FFF; -webkit-text-stroke: transparent;}
   }
   .port-header h4 {
     color: #FFF;
