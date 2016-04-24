@@ -29,13 +29,28 @@
   }
 }
 
+.stormpath {
+  background-image: url("/images/work/stormpath/stormpath-banner.jpg");
+  background-size: cover;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  .port-header h1 {
+    -webkit-text-stroke: 3px #FFF;
+    @media (max-width: 991px) {font-size: 100px;}
+    @media (max-width: 600px) {font-size: 65px; color: #FFF; -webkit-text-stroke: transparent;}
+  }
+  .port-header h4 {
+    color: #FFF;
+  }
+}
+
 .amberallen {
   background-image: url("/images/work/amberallen/amber-banner.jpg");
-  background-position: 50%  50%;
+  background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
   .port-header h1 {
-    @media (max-width: 991px) {font-size: 100px;}
+    @media (max-width: 991px) {font-size: 100px; color: #000; -webkit-text-stroke: transparent;}
   }
 }
 
@@ -57,8 +72,8 @@
 .wwsy {
   background-image: url("/images/work/wwsy/wwsy-banner.jpg");
   background-size: cover;
+  background-position: 100% 0%;
   background-repeat: no-repeat;
-  @media (max-width: 480px) {background-position: 100% 100%;}
   .port-header h1 {
     -webkit-text-stroke: 3px #FFF;
     @media (max-width: 991px) {font-size: 100px;}
@@ -71,9 +86,9 @@
 
 .brackstacks {
   background-image: url("/images/work/brackstacks/brack-banner.jpg");
-  background-size: top left;
+  background-size: cover;
+  background-position: 100% 0%;
   background-repeat: no-repeat;
-  @media (max-width: 480px) {background-position: 100% 100%;}
   .port-header h1 {
     -webkit-text-stroke: 3px #FFF;
     @media (max-width: 991px) {font-size: 100px;}
