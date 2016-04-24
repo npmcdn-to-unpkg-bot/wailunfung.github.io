@@ -5,17 +5,17 @@ layout: page
   <div class="container text-center">
   	<div class="row">
   	  <div class="col-md-12">
-        <a href="{{ root_url }}/work/iphoto" class="left"><span class="tagline">iphotographer</span></a>
-    		<a href="{{ root_url }}/index.html"><span class="tagline">home</span></a>
-        <a href="{{ root_url }}/work/brack" class="right"><span class="tagline">brack stacks</span></a>
+        <a href="{{ root_url }}/work/iphoto" class="left"><span class="tagline"><i class="fa fa-arrow-left"></i> iPhotographer</span></a>
+    		<a href="{{ root_url }}/index.html"><span class="tagline">Home</span></a>
+        <a href="{{ root_url }}/work/brack" class="right"><span class="tagline">Brack Stacks <i class="fa fa-arrow-right"></i></span></a>
   	  </div>
   	</div>
   </div>
 </nav>
 
-<div class="port-banner" id="#wewillshootyou">
+<div class="port-banner wwsy" id="top">
   <div class="port-header">
-    <h1>W.W.S.Y.</h1>
+    <h1 class="botmargin">W.W.S.Y.</h1>
     <h4>Front End Development</h4>
   </div>
 </div>
@@ -24,10 +24,38 @@ layout: page
 
   <div class="container">
     <div class="row">
-      <div class="col-md-8 col-md-offset-2 topmargin botmargin">
-        <h3 class="nomargin">Project Info</h3>
+
+      <div class="col-md-8 col-md-offset-2 topmargin botmargin" id="intro">
+        <h3 class="nomargin">Project Intro</h3>
         <hr>
+        <p>We Will Shoot You is a boutique film studio, based in San Francisco, specializing in video production. Their work ranges form music video productions to commercials for clients such as AirBnB.</p>
+        <p>For this project, the goal was to build a simple lading page with a video player that would be easy for the client to update content.</p>
+        <div id="strat"></div>
+        <h3>Stratgey &amp; Concept</h3>
+        <hr>
+        <p>Once I took the project into code, I found it quite difficult to position the video so that the player controls would be hidden behind the navigation and footer elements. Embedded videos from Vimeo do not allow for the controls to be hidden, even with custom code. Eventually I was able to achieve what the client wanted and the results are a very clean and minimal homepage.</p>
+        <div class="image-block text-center drop-shadow topmargin" id="showcase">
+          <h3 class="nomargin">Showcase</h3>
+          <p>We Will Shoot You: Logo Designs</p>
+          <img src="/images/work/wwsy/wwsy-showcase-1.jpg" class="img-responsive botmargin">
+          <img src="/images/work/wwsy/wwsy-showcase-2.jpg" class="img-responsive botmargin">
+          <h3 class="nomargin">Showcase</h3>
+          <p>We Will Shoot You: Web Design &amp; Build</p>
+          <img src="/images/work/wwsy/wwsy-showcase-3.jpg" class="img-responsive">
+        </div>
       </div>
+
+      <div class="col-md-2 hidden-sm hidden-xs topmargin">
+        <div class="page-menu" data-spy="affix" data-offset-top="350">
+          <ul class="list-group">
+            <a href="#top"><li class="list-group-item">Back to Top</li></a>
+            <a href="#intro"><li class="list-group-item">Project Intro</li></a>
+            <a href="#strat"><li class="list-group-item">Strategy &amp; Concept</li></a>
+            <a href="#showcase"><li class="list-group-item">Showcase</li></a>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </div>
   

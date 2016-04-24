@@ -4,6 +4,14 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  .port-header h1 {
+    -webkit-text-stroke: 3px #000;
+    @media (max-width: 991px) {font-size: 100px;}
+    @media (max-width: 600px) {font-size: 65px; color: #000; -webkit-text-stroke: transparent;}
+  }
+  .port-header h4 {
+    color: #000;
+  }
 }
 
 .sapientnitro {
@@ -36,6 +44,36 @@
   background-position: top left;
   background-size: cover;
   background-repeat: no-repeat;
+  .port-header h1 {
+    -webkit-text-stroke: 3px #FFF;
+    @media (max-width: 991px) {font-size: 100px;}
+    @media (max-width: 676px) {font-size: 58px; color: #FFF; -webkit-text-stroke: transparent;}
+  }
+  .port-header h4 {
+    color: #FFF;
+  }
+}
+
+.wwsy {
+  background-image: url("/images/work/wwsy/wwsy-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media (max-width: 480px) {background-position: 100% 100%;}
+  .port-header h1 {
+    -webkit-text-stroke: 3px #FFF;
+    @media (max-width: 991px) {font-size: 100px;}
+    @media (max-width: 676px) {font-size: 58px; color: #FFF; -webkit-text-stroke: transparent;}
+  }
+  .port-header h4 {
+    color: #FFF;
+  }
+}
+
+.brackstacks {
+  background-image: url("/images/work/brackstacks/brack-banner.jpg");
+  background-size: top left;
+  background-repeat: no-repeat;
+  @media (max-width: 480px) {background-position: 100% 100%;}
   .port-header h1 {
     -webkit-text-stroke: 3px #FFF;
     @media (max-width: 991px) {font-size: 100px;}
