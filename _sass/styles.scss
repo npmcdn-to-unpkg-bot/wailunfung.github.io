@@ -423,6 +423,8 @@ a:hover {
 
 .page-menu {
   width: 200px;
+  @media (max-width: 1220px) {width: auto;}
+  @media (max-width: 1024px) {display: none;}
   a {
     color: #000;
   }
