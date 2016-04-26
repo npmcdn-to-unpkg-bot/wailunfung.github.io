@@ -5,9 +5,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   .port-header h1 {
+    color: #000;
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 3px #000;
     @media (max-width: 991px) {font-size: 100px;}
-    @media (max-width: 600px) {font-size: 65px; color: #000; -webkit-text-stroke: transparent;}
+    @media (max-width: 600px) {font-size: 65px; color: #000; -webkit-text-stroke: transparent; -webkit-text-fill-color: #000;}
   }
   .port-header h4 {
     color: #000;
@@ -20,9 +22,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   .port-header h1 {
+    color: #FFF;
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 3px #FFF;
     @media (max-width: 991px) {font-size: 100px;}
-    @media (max-width: 600px) {font-size: 65px; color: #FFF; -webkit-text-stroke: transparent;}
+    @media (max-width: 600px) {font-size: 65px; color: #FFF; -webkit-text-stroke: transparent; -webkit-text-fill-color: #FFF;}
   }
   .port-header h4 {
     color: #FFF;
@@ -35,9 +39,11 @@
   background-position: 100% 100%;
   background-repeat: no-repeat;
   .port-header h1 {
+    color: #FFF;
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 3px #FFF;
     @media (max-width: 991px) {font-size: 100px;}
-    @media (max-width: 600px) {font-size: 65px; color: #FFF; -webkit-text-stroke: transparent;}
+    @media (max-width: 600px) {font-size: 65px; color: #FFF; -webkit-text-stroke: transparent; -webkit-text-fill-color: #FFF;}
   }
   .port-header h4 {
     color: #FFF;
@@ -50,7 +56,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   .port-header h1 {
-    @media (max-width: 991px) {font-size: 100px; color: #000; -webkit-text-stroke: transparent;}
+    color: #000;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 3px #000;
+    @media (max-width: 991px) {font-size: 100px; color: #000; -webkit-text-stroke: transparent; -webkit-text-fill-color: #000;}
   }
 }
 
@@ -60,9 +69,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   .port-header h1 {
+    color: #FFF;
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 3px #FFF;
     @media (max-width: 991px) {font-size: 100px;}
-    @media (max-width: 676px) {font-size: 58px; color: #FFF; -webkit-text-stroke: transparent;}
+    @media (max-width: 676px) {font-size: 58px; color: #FFF; -webkit-text-stroke: transparent; -webkit-text-fill-color: #FFF;}
   }
   .port-header h4 {
     color: #FFF;
@@ -75,9 +86,11 @@
   background-position: 100% 0%;
   background-repeat: no-repeat;
   .port-header h1 {
+    color: #FFF;
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 3px #FFF;
     @media (max-width: 991px) {font-size: 100px;}
-    @media (max-width: 676px) {font-size: 58px; color: #FFF; -webkit-text-stroke: transparent;}
+    @media (max-width: 676px) {font-size: 58px; color: #FFF; -webkit-text-stroke: transparent; -webkit-text-fill-color: #FFF;}
   }
   .port-header h4 {
     color: #FFF;
@@ -90,9 +103,11 @@
   background-position: 100% 0%;
   background-repeat: no-repeat;
   .port-header h1 {
+    color: #FFF;
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 3px #FFF;
     @media (max-width: 991px) {font-size: 100px;}
-    @media (max-width: 676px) {font-size: 58px; color: #FFF; -webkit-text-stroke: transparent;}
+    @media (max-width: 676px) {font-size: 58px; color: #FFF; -webkit-text-stroke: transparent; -webkit-text-fill-color: #FFF;}
   }
   .port-header h4 {
     color: #FFF;
