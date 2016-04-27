@@ -114,6 +114,26 @@ a:hover {
   background-color: #000;
 }
 
+/* Masonry */
+
+.grid {
+  margin: 0 auto 50px auto;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-item {
+  float: left;
+  width: 480px;
+  margin: 0 10px 10px 0;
+  @media (max-width: 480px) {width: 300px;} 
+}
+
+
 /* Homepage */
 .header {
   display: flex;
@@ -123,6 +143,8 @@ a:hover {
   height: 100%;
   background-color: #292929;
   background-image: url("/images/homepage/homepage-banner.jpg");
+  background-attachment: fixed;
+  background-position: 50% 50%;
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -149,6 +171,13 @@ a:hover {
     h3 {
       color: #FFF;
       text-shadow: 2px 0px 10px rgba(0, 0, 0, 1);
+    }
+    a i {
+      color: #FFF;
+      margin-top: 30px;
+      &:hover {
+        color: #CCC;
+      }
     }
   }
 }
@@ -302,7 +331,7 @@ a:hover {
   align-items: center;
   height: 100%;
   padding: 50px 150px;
-  @media (max-width: 767px) {padding: 50px 50px; height: auto;}
+  @media (max-width: 1024px) {padding: 50px 50px; height: auto;}
   .body-text {
     text-align: center;
   }

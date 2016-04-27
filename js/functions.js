@@ -3,22 +3,22 @@ $(document).ready(function() {
 });
 
 $(function (){
-	$('[data-toggle="popover"]').popover({ trigger: "hover" })
+    $('[data-toggle="popover"]').popover({ trigger: "hover" })
 });
 
 $(function(){
-	$('a[href^="#"]').on('click',function (e) {
-		e.preventDefault();
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
 
-		var target = this.hash;
-		var $target = $(target);
+        var target = this.hash;
+        var $target = $(target);
 
-		$('html, body').stop().animate({
-			'scrollTop': $target.offset().top - 70
-		}, 500, 'swing', function () {
-			window.location.hash = target;
-		});
-	});
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - 70
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
 });
 
 /*
@@ -38,3 +38,14 @@ if($('.navbar').length > 0){
     checkScroll();
   });
 }
+
+/*
+ * Masonry
+ */
+$(window).on('load', function () {
+  $('.grid').masonry ({
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-item',
+    isFitWidth: true
+  });
+});
