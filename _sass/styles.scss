@@ -130,6 +130,8 @@ a:hover {
   float: left;
   width: 480px;
   margin: 0 10px 10px 0;
+  border-radius: 7px;
+  overflow: hidden;
   @media (max-width: 480px) {width: 300px;} 
 }
 
