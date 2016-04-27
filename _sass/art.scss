@@ -1,16 +1,16 @@
-/* Blog Index */
-.blog-banner {
+/* Art Index */
+.art-banner {
   display: flex;
   position: relative;
   align-items: center;
   width: 100%;
   height: 400px;
   background-color: #666;
-  background-image: url("/images/blog/blog-banner.jpg");
+  background-image: url("/images/art/art-banner.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  .blog-header {
+  .art-header {
     text-align: center;
     width: 100%;
     h1 {

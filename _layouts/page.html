@@ -5,10 +5,12 @@
 
   <body class="animated fadeIn">
 
-	{{ content }}
+    {% include navigation.html %}
 
-	{% include footer.html %}
-	{% include javascripts.html %}
+    {{ content }}
+
+    {% include footer.html %}
+    {% include javascripts.html %}
 
   </body>
 

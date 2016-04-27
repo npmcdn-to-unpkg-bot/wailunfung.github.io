@@ -25,7 +25,7 @@ $(function(){
  * Header Opacity Change
  */
 function checkScroll(){
-  var startY = $('.navbar-inverse').height() * 2; //The point where the navbar changes in px
+  var startY = $('.navbar-inverse').height() * 3; //The point where the navbar changes in px
   if($(window).scrollTop() > startY){
     $('.navbar-inverse').addClass("scrolled");
   }else{
