@@ -64,8 +64,14 @@ section {
 .btn-ghost-light {
   z-index: 10;
   color: #FFF;
+  background-color: transparent;
   border: 1px solid #FFF;
   padding: 10px 30px;
+}
+
+.btn-small {
+  font-size: 10px;
+  padding: 5px 10px;
 }
 
 .drop-shadow {
@@ -133,6 +139,16 @@ a:hover {
   border-radius: 7px;
   overflow: hidden;
   @media (max-width: 480px) {width: 300px;} 
+}
+.blog-grid {
+  height: 300px;
+  width: 300px;
+  border: 1px solid #CCC;
+}
+.blog-text-block {
+  background-color: #333;
+  padding: 20px;
+  height: 100%;
 }
 
 
