@@ -113,3 +113,20 @@
     color: #FFF;
   }
 }
+
+.misc {
+  background-image: url("/images/work/misc/misc-banner.jpg");
+  background-size: cover;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  .port-header h1 {
+    color: #FFF;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 3px #FFF;
+    @media (max-width: 991px) {font-size: 100px;}
+    @media (max-width: 676px) {font-size: 58px; color: #FFF; -webkit-text-stroke: transparent; -webkit-text-fill-color: #FFF;}
+  }
+  .port-header h4 {
+    color: #FFF;
+  }
+}
