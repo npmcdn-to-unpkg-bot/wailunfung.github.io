@@ -1,0 +1,57 @@
+---
+layout: blog
+comments: true
+---
+<div class="blog-banner">
+  <div class="blog-header">
+    <h1 class="botmargin">Blog</h1>
+    <h4>mindless rants and other jibber jabber</h4>
+  </div>
+</div>
+
+<div class="container topmargin botmargin">
+  <div class="row">
+
+    <div class="col-md-6 col-md-offset-3 blog-post">
+      <h1>Nostalgic Gaming</h1>
+      <img src="/images/blog/2016-05-06-nostalgic-gaming/finalfantasy.jpg" class="img-responsive topmargin botmargin">
+      <p>I recently had a hankering to play some Final Fantasy VII and I actually found the game on the Apple App Store for &#36;14.99 USD. I bought it immediatly for my iPad just to relive all the nostalgia from my childhood.</p>
+      <p>About 15 minutes into the game, my hands started cramping and I was getting frustrated by the controls. I kept running into objects, exiting rooms, moving in directions I never intended. It was awkward and annoying. To be honest, I missed the entire experience of having a controller and playing it on my TV.</p>
+      <h3 class="topmargin">Enter OpenEmu</h3>
+      <img src="/images/blog/2016-05-06-nostalgic-gaming/openemu.png" class="img-responsive">
+      <p>OpenEmu is a great open source project that finally brings game emulations to the OS X. Before I got rid of my PC, I was able to play all these games and find emulators for them rather easily. On the Mac however, its actually quite difficult and somewhat of a challenge. Thanks to the folks at OpenEmu, those headaches are now all gone!</p>
+      <h3 class="topmargin">Installation: Cloning or Website</h3>
+      <p>Theres a two different ways to install OpenEmu, I won't go to deep into the steps here but I'll list the links for you and let you decide for yourself which installation type is right for your needs.</p>
+      <ul>
+        <li><a href="http://openemu.org/">Download from Website</a> I recommend using the experimental build, it has more support for more consoles, also this is the easiest/fastest way to install OpenEmu</li>
+        <li><a href="https://github.com/OpenEmu/OpenEmu/wiki">Compile from Source</a> I tried this method out and compiled the code in X-Code but I honestly see no difference from this version and the experimental version I downloaded off the website</li>
+      </ul>
+      <h4>Compiling the source code off github is for advanced users. You'll need authorized SSH keys, a GitHub Account and the latest version of X-Code installed before you proceed</h4>
+      <h3 class="topmargin">Setup</h3>
+      <p>Once installed, launch OpenEmu, you'll be greeted with some fancy splash screens before you're taken to your library:</p>
+      <img src="/images/blog/2016-05-06-nostalgic-gaming/library.png" class="img-responsive botmargin">
+      <p>Drag and drop your .cue files into the library. The app will begin scanning the file and searching for the associated .bin files:</p>
+      <img src="/images/blog/2016-05-06-nostalgic-gaming/scan.png" class="img-responsive botmargin">
+      <p>For games like FFVII that span multiple discs, you'll want to create a plain text .m3u file. To do this, first load all the .cue files into your library. When the library is done scanning, open up the text editor of your choice, I used Sublime Text 3. Copy the .cue files into the text editor, making sure you save the file as PLAIN TEXT with the extension .m3u:</p>
+      <img src="/images/blog/2016-05-06-nostalgic-gaming/m3u.png" class="img-responsive botmargin">
+      <p>Instead of launching the individual disc files, running the .m3u files allows you to switch discs in the game rather than having to back out to the library:</p>
+      <img src="/images/blog/2016-05-06-nostalgic-gaming/switch.png" class="img-responsive botmargin">
+      <h3 class="topmargin">Troubleshooting:</h3>
+      <p>If you're lucky and your build somehow included the following .bin files, then congratulations, go play the game and stop reading this none sense. However if you're unlucky like me and got the below error message, download this file: <a href="/downloads/OpenEmu-2-BIOS-pack.zip">OpenEmu-2-BIOS-pack</a>. It includes all the latest bios you'll need to get some of the emulators working. To install, simply unzip the file and drag the necessary .bin files into your library like you did with the .cue files.</p>
+      <img src="/images/blog/2016-05-06-nostalgic-gaming/errors.png" class="img-responsive botmargin">
+      <h3 class="topmargin">Controller Support:</h3>
+      <p>OpenEmu has a lot of support for many different types of controllers, however, I had none of the supported controllers on the list. I was lucky enough to find support for my Xbox One controller though. Just install this little gem from <a href="https://github.com/360Controller/360Controller/">Xbox 360 Controller on GitHub</a>, the latest release provides Xbox One controller support. Please note that you'll need a USB cable hooked up to the controller as the bluetooth technology in the controller is proprietary and not universal like the PS4 controllers.</p>
+      <div class="tldr-block topmargin botmargin">
+        <h2>TL;DR <span class="smaller">Links &amp; Downloads:</span></h2>
+        <ul>
+          <li><a href="http://openemu.org/">Download from Website</a></li>
+          <li><a href="https://github.com/OpenEmu/OpenEmu/wiki">Compile from Source Tutorial</a></li>
+          <li><a href="/downloads/OpenEmu-2-BIOS-pack.zip">Download Bios Pack 2</a></li>
+          <li><a href="https://github.com/360Controller/360Controller/">Xbox One Controller Support</a></li>
+        </ul>
+      </div>
+      {% include disqus.html %}
+    </div>
+
+  </div>
+</div>
