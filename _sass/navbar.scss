@@ -1,0 +1,143 @@
+// NAVBAR
+.nav {
+  color: #1a1a1a;
+}
+
+.navbar-default {
+  top: 0;
+  padding-top: 24px;
+  height: 100px;
+  display: block;
+  vertical-align: middle;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 1000;
+  width: 100%;
+  display: block;
+  position: fixed;
+  font-size: 22px;
+  @include transition(all .5s ease-in-out);
+  a {
+    border-bottom: none;
+  }
+  .navbar-nav>li>a {
+    color: #1a1a1a;
+    padding: 15px 0 5px 0;
+    margin: 0 15px;
+    font-weight: 700;
+    &:hover, &:focus {
+      border-bottom: 2px solid #000;
+    }
+  }
+  .navbar-brand {
+    color: #1a1a1a;
+    font-size: 28pt;
+    font-weight: 700;
+    margin: -5px 0 0 0;
+    &:hover, &:focus {
+      border-bottom: none;
+    }
+  }
+}
+
+.navbar-default.hide-header {
+  top: -100px !important;
+}
+
+.navbar-default.show-header {
+  top: 0;
+}
+
+.menu-toggle {
+  -webkit-appearance: none;
+  right: 3%;
+  top: 24px;
+  background: transparent;
+  border: 0;
+  width: 30px;
+  height: 24px;
+  border-bottom: 4px solid #1a1a1a;
+  border-top: 4px solid #1a1a1a;
+  cursor: pointer;
+  margin: 0;
+  outline: 0;
+  position: absolute;
+  z-index: 1000000;
+  -webkit-transition: border-color 150ms ease-out, -webkit-transform 150ms ease-out, height 150ms ease-out;
+  transition: border-color 150ms ease-out, transform 150ms ease-out, height 150ms ease-out;
+  &:before, &:after {
+    border-bottom: 4px solid #1a1a1a;
+    bottom: 46%;
+    margin-bottom: -1px;
+    content: '';
+    position: absolute;
+    height: 0;
+    left: 0;
+    right: 0;
+    -webkit-backface-visibility: hidden;
+    @include transition(border-color 0.2s ease);
+  }
+  span {
+    display: none;
+  }
+}
+
+.menu-toggle.active {
+  position: fixed;
+  border-color: transparent;
+  -webkit-transform: rotateZ(90deg);
+  transform: rotateZ(90deg);
+  &:before, &:after {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  }
+  &:before {
+    -webkit-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
+    border-color: #fff !important;
+  }
+  &:after {
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+    border-color: #fff !important;
+  }
+}
+
+.mobile-wrap {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 60px 20px 40px;
+  background: #1a1a1a;
+  font-size: 28px;
+  font-size: 1.875rem;
+  color: #fff;
+  z-index: 10000;
+  font-size: 300%;
+  ul li {
+    list-style-type: none;
+  }
+  a {
+    color: #FFF;
+    &:hover, &:focus {
+      color: #CCC;
+      text-decoration: none;
+      border-bottom: none;
+    }
+  }
+}
+
+#mobile-nav {
+  margin-left: 30px;
+}
+.links-menu-bar {
+  position: fixed;
+  top: 100px;
+}
+
+.social-menu-bar {
+  position: fixed;
+  bottom: 20px;
+}

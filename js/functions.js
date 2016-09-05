@@ -2,34 +2,18 @@ $(document).ready(function() {
   console.log("Initialized");
 });
 
+// Bootstrap Hotspot Initialize
 $(function (){
     $('[data-toggle="popover"]').popover({ trigger: "hover" })
 });
 
-$(function(){
-    $('a[href^="#"]').on('click',function (e) {
-        e.preventDefault();
-
-        var target = this.hash;
-        var $target = $(target);
-
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top - 70
-        }, 500, 'swing', function () {
-            window.location.hash = target;
-        });
-    });
-});
-
-/*
- * Header Opacity Change
- */
+// Navigation Show Hide
 function checkScroll(){
-  var startY = $('.navbar-inverse').height() * 3; //The point where the navbar changes in px
-  if($(window).scrollTop() > startY){
-    $('.navbar-inverse').addClass("scrolled");
+
+  if($(window).scrollTop() > 100){
+    $('.navbar-default').addClass("show-header").removeClass("hide-header");
   }else{
-    $('.navbar-inverse').removeClass("scrolled");
+    $('.navbar-default').removeClass("show-header").addClass("hide-header");
   }
 }
 
@@ -39,13 +23,11 @@ if($('.navbar').length > 0){
   });
 }
 
-/*
- * Masonry
- */
-$(window).on('load', function () {
-  $('.grid').masonry ({
-    itemSelector: '.grid-item',
-    columnWidth: '.grid-item',
-    isFitWidth: true
-  });
+// Mobile Nav
+$(function() {
+
+    $('.menu-toggle').on('click', function() {
+          $('body').toggleClass('menu-show');
+          $('#menu-toggle').toggleClass('active');
+    });
 });
